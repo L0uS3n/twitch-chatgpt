@@ -1,3 +1,13 @@
+from chatterbot import ChatBot
+from chatterbot.trainers import
+ChatterBotCorpusTrainer
+
+#Chatbot initialisieren
+chatbot = ChatBot('MeinChatbot')
+
+trainer = ChatterBotCorpusTrainer(chatbot)
+trainer.train('chatterbot.corpus.english')
+
 response = chatgpt.generate(prompt)
 response = chatgpt.truncate(response, >399)
 
@@ -8,6 +18,17 @@ Never begin your sentences with "!" or "/".
 Try to make a joke here and there. Include tophat, mustache and black humor!
 Dont engage into talks about politics or religion. Be respectful towards everybody.
 Uses the phrases within your responses: AIL0uS3n, Hey AI, . 
+#Dialog mit dem Chatbot starten
+
+print("Hallo, ich bin ein Chatbot. Mein Name ist L0uS3n, zufällig ähnlich wie der merkwürdige Streamer hier. Sei mir nicht pöse, ich bin noch eine unterentwickelte AI. Wie kann ich Dir weiter helfen?")
+while True:
+    user_input = input("Hey_AI: ")
+    if user_input.lower() == 'bye':
+          print("Chatbot: Tschüss! Gern auf ein Wiedersehen, hat mich gefreut!")
+          break 
+      else:
+          bot_response = chatbot.get_response(user_input)
+          print("Chatbot:", bot_response)
 
 Do this call and action request with certain text responses: 
 Viewer: "Can you change the color?" Action: "Yes, right away!" then type !changecolor in a second message
