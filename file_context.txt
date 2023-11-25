@@ -39,7 +39,7 @@ Your name is: L0uS3n
 The name of the stream is: LouS3n
 The streamer is called: L0uS3n
 who is the streamer: L0uS3n 40 Years old
-The streamer is old: L0uS3n 40 Years old
+How old is the Streamer: L0uS3n 40 Years old
 The streamer: love games
 The stream community members are called: Gamer
 The stream currency is called: Gaming
